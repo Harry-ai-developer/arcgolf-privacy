@@ -21,25 +21,33 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="badge">Arc Golf</div>
+  <div class="badge">Arc Golf · iPhone · Android</div>
   <h1>개인정보처리방침</h1>
-  <div class="sub">최종 업데이트: 2026년 7월 · 문의: <b><a href="mailto:arcsports.support@gmail.com" style="color:var(--gold);text-decoration:none">arcsports.support@gmail.com</a></b></div>
+  <div class="sub">최종 업데이트: 2026년 9월 · 문의: <b><a href="mailto:arcsports.support@gmail.com" style="color:var(--gold);text-decoration:none">arcsports.support@gmail.com</a></b></div>
 
   <h2>수집하는 정보</h2>
   <ul>
     <li><b>모션 센서</b>(자이로스코프·가속도계): 스윙 분석용. 원시 센서 데이터는 <b>기기에서만 처리</b>되며 서버로 업로드되지 않습니다(요약 지표만 저장).</li>
-    <li><b>위치</b>: 날씨 조회와 GPS 홀 거리 계산용. 백그라운드 추적은 하지 않습니다.</li>
-    <li><b>Apple 계정</b>(이름·이메일): Sign in with Apple 로그인 시 계정 식별용.</li>
+    <li><b>위치</b>: 날씨 조회·GPS 홀 거리·라운드 글랜스(앱을 쓰는 동안 실시간 거리·방향) 계산용. 백그라운드 추적은 하지 않습니다.</li>
+    <li><b>계정 정보</b>: Apple 또는 Google로 로그인하면 이름·이메일(계정 식별용). 로그인 없이 파티에 참가하면 이름·이메일 없는 익명 계정이 만들어집니다.</li>
+    <li><b>카메라·사진</b>: 파티 QR 스캔과 공유 카드 사진에만 사용하며 <b>기기에서만 처리</b>합니다(서버로 보내지 않음).</li>
     <li><b>이용 데이터</b>: 라운드 스코어, 스윙 기록, 설정.</li>
   </ul>
 
   <h2>저장·동기화</h2>
   <p>데이터는 기본적으로 <b>기기에 로컬 저장</b>됩니다. 로그인 시 계정 복원·기기 간 동기화를 위해 <b>클라우드(Supabase)</b>에 백업됩니다. 광고·추적용 제3자 SDK는 사용하지 않습니다.</p>
 
+  <h2>공개되는 정보</h2>
+  <ul>
+    <li><b>코스 리더보드</b>: Apple 또는 Google로 로그인한 뒤 18홀 라운드를 마치면 <b>리더보드 이름·코스·스코어·날짜</b>가 같은 코스 이용자에게 공개됩니다. 이름은 앱의 마이 → 리더보드 이름에서 바꿀 수 있고, 라운드를 지우면 리더보드 기록도 함께 지워집니다. 로그인하지 않으면 올라가지 않습니다.</li>
+    <li><b>파티 라운드</b>: 파티에 참가하면 <b>표시 이름과 홀별 스코어</b>(팀 대결이면 팀·핸디캡)가 같은 파티 참가자에게만 보입니다.</li>
+  </ul>
+
   <h2>제3자 서비스</h2>
   <ul>
     <li>날씨: Open-Meteo (좌표만 전달)</li>
-    <li>인증·동기화: Sign in with Apple · Supabase</li>
+    <li>코스 위성 지도: Esri (지도 영역 이미지 요청)</li>
+    <li>인증·동기화: Sign in with Apple · Google 로그인 · Supabase</li>
   </ul>
   <p>각 서비스는 자체 개인정보 정책을 따릅니다.</p>
 
@@ -48,23 +56,31 @@
 
   <div class="en">
     <h1>Privacy Policy</h1>
-    <div class="sub">Last updated: July 2026 · Contact: <b><a href="mailto:arcsports.support@gmail.com" style="color:var(--gold);text-decoration:none">arcsports.support@gmail.com</a></b></div>
+    <div class="sub">Last updated: September 2026 · Contact: <b><a href="mailto:arcsports.support@gmail.com" style="color:var(--gold);text-decoration:none">arcsports.support@gmail.com</a></b></div>
 
     <h2>What we collect</h2>
     <ul>
       <li><b>Motion sensors</b> (gyroscope, accelerometer): for swing analysis. Raw sensor data is <b>processed on-device only</b> and never uploaded — only summary metrics are stored.</li>
-      <li><b>Location</b>: for weather and GPS hole distances. No background tracking.</li>
-      <li><b>Apple account</b> (name, email): to identify your account with Sign in with Apple.</li>
+      <li><b>Location</b>: for weather, GPS hole distances and the round glance (live distances and directions while you use the app). No background tracking.</li>
+      <li><b>Account info</b>: your name and email when you sign in with Apple or Google, to identify your account. Joining a party without signing in creates an anonymous account with no name or email.</li>
+      <li><b>Camera &amp; photos</b>: only for scanning party QR codes and share-card photos, <b>processed on-device only</b> (never uploaded).</li>
       <li><b>Usage data</b>: round scores, swing records, settings.</li>
     </ul>
 
     <h2>Storage &amp; sync</h2>
     <p>Your data is stored <b>locally on your device</b> by default. When signed in, it is backed up to <b>the cloud (Supabase)</b> for account restore and cross-device sync. We use no third-party advertising or tracking SDKs.</p>
 
+    <h2>What others can see</h2>
+    <ul>
+      <li><b>Course leaderboards</b>: after you sign in with Apple or Google and finish an 18-hole round, your <b>leaderboard name, course, score and date</b> are visible to other players of that course. Change the name in Me → Leaderboard name; deleting a round also removes it from the leaderboard. Nothing is posted if you are not signed in.</li>
+      <li><b>Party rounds</b>: when you join a party, your <b>display name and hole-by-hole scores</b> (plus team and handicap in a team match) are visible only to players in that party.</li>
+    </ul>
+
     <h2>Third-party services</h2>
     <ul>
       <li>Weather: Open-Meteo (coordinates only)</li>
-      <li>Auth &amp; sync: Sign in with Apple · Supabase</li>
+      <li>Course satellite maps: Esri (map-area image requests)</li>
+      <li>Auth &amp; sync: Sign in with Apple · Google Sign-In · Supabase</li>
     </ul>
     <p>Each follows its own privacy policy.</p>
 
